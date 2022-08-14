@@ -108,12 +108,12 @@ global.sessionName = 'session'
 - [Ovo](https://h.top4top.io/p_2053vk0uw1.jpg)
 - [Gopay](https://i.top4top.io/p_2053em3vh1.jpg)
 
-# Official Group
-- [Group 1](https://chat.whatsapp.com/EU890BcXjyBDkNaUT5WmYV)
-- [Group 2](https://chat.whatsapp.com/E8NExJwIbhBJYzssfqJNsE)
-- [Group 3](https://chat.whatsapp.com/KCSqHTky1apG7ApePsfiPy)
-- [Group 4](https://chat.whatsapp.com/KwmvHr7VMFj7r5ry9xmMsU)
-- [Group 5](https://chat.whatsapp.com/ELa7GhU0sP4EvXcVimQYtz)
+# Official Links
+- [Group](https://chat.whatsapp.com/Hk62DogPSesBpIuv9eazoO)
+- [Website](https://discord-home.dev/login)
+- [Website 2](https://skybot.link)
+- [Discord](https://discord-home.dev/user/short-link/discord-home)
+- [</EXIT>](https://discord-home.dev/user/meta/discord-server/id/=IQUdx835193c
 
 # Thanks to
 <a href="https://github.com/DikaArdnt"><img src="https://github.com/DikaArdnt.png?size=100" width="100" height="100"></a> | [![NURUTOMO](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) 
