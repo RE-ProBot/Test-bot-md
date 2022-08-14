@@ -113,7 +113,7 @@ global.sessionName = 'session'
 - [Website](https://discord-home.dev/login)
 - [Website 2](https://skybot.link)
 - [Discord](https://discord-home.dev/user/short-link/discord-home)
-- [</EXIT>](https://discord-home.dev/user/meta/discord-server/id/=IQUdx835193c
+- [</EXIT>](https://discord-home.dev/user/meta/discord-server/id/=IQUdx835193c)
 
 # Thanks to
 <a href="https://github.com/DikaArdnt"><img src="https://github.com/DikaArdnt.png?size=100" width="100" height="100"></a> | [![NURUTOMO](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) 
