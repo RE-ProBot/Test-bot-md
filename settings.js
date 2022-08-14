@@ -25,7 +25,7 @@ global.language = indonesia  //change indonesia to english if you don't understa
 
 // Other
 // Other
-global.botname = "Alpha EXIT mdོ" //namabot kalian
+global.botname = "Test Bot" //namabot kalian
 global.ownername= "ᴹᴿ᭄ </EXIT> ×፝֟͜×" //nama kalian
 global.myweb ="https://discord-home.dev/login" //bebas asal jan hapus
 global.youtube = "https://youtube.com/UCzM6SS7e2rQLJtMjbWclGnQ" //bebas asal jan hapus
@@ -34,9 +34,9 @@ global.email = "emma@skybot.link" //bebas
 global.region = "Zürich (CHF)" //bebas
 global.timezone = 'Asia/Jakarta' //  timezone wib
 global.premium = ['4915905842496'] //premium user
-global.owner = ["4915251332726"] //ganti agar fitur owner bisa di gunakan
+global.owner = ["4915251332726,777777777777"] //ganti agar fitur owner bisa di gunakan
 global.ownernomer = "4915251332726" // nomor wa kalian
-global.ownernomerr = "+4915251332726" //nmr wa kalian
+global.ownernomerr = "+4915251332726, +777777777777" //nmr wa kalian
 global.thumbnail = "./image/lol.jpg" // ini lol.jpg adalah nama foto di folder image. untuk foto bot
 global.donasi = "./image/donasi.jpg" // foto donasi di folder image
 global.background_welcome="https://telegra.ph/file/90a931648de597820bc08.jpg" // maks size 30kb, agar welcome image nya tdk delay
