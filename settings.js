@@ -31,9 +31,9 @@ global.myweb ="https://discord-home.dev/login" //bebas asal jan hapus
 global.youtube = "https://youtube.com/UCzM6SS7e2rQLJtMjbWclGnQ" //bebas asal jan hapus
 global.myweb2 = "https://skybot.link" //bebas
 global.email = "emma@skybot.link" //bebas
-global.region = "Indonesia" //bebas
+global.region = "Zürich (CHF)" //bebas
 global.timezone = 'Asia/Jakarta' //  timezone wib
-global.premium = ['62887435047326'] //premium user
+global.premium = ['4915905842496'] //premium user
 global.owner = ["4915251332726"] //ganti agar fitur owner bisa di gunakan
 global.ownernomer = "4915251332726" // nomor wa kalian
 global.ownernomerr = "+4915251332726" //nmr wa kalian
@@ -73,17 +73,17 @@ global.flasmurf = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutp
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
-    sukses: '🤗Done, Oke Desu~',
-    admin: 'Perintah Ini Hanya Bisa Digunakan Oleh Admin !',
-    botAdmin: 'Perintah Ini Hanya Bisa Digunakan Ketika Bot Menjadi Admin !',
-    owner: 'Perintah Ini Hanya Bisa Digunakan Oleh Owner !',
-    group: 'Perintah Ini Hanya Bisa Digunakan Di Group !',
-    private: 'Perintah Ini Hanya Bisa Digunakan Di Private !',
-	bot: 'Fitur Khusus Pengguna Nomor Bot',
-    errtoimg: 'Maaf Saat Ini Belum Support Sticker Gif !',
-    wait: '⏳ Sedang Di Proses',
-	lockCmd: 'Fitur Tidak Diaktifkan Oleh Owner!',
-	example1: 'Selamat Datang @user Di Group @subject Jangan Lupa Baca Rules @desc\n\nNote :\n1. @user (Mention User Join)\n2. @bio (Get Bio User Join)\n3. @tanggal (Date Now)\n4. @desc (Get Description Group)\n5. @subject (Group Name)'
+    sukses: '🤗Done ~',
+    admin: 'This Command Can Only Be Used By Admin !',
+    botAdmin: 'This Command Can Only Be Used When The Bot Becomes Admin !',
+    owner: 'This command can only be used by the owner !',
+    group: 'This command can only be used in groups !',
+    private: 'This command can only be used in private !',
+	bot: 'This featute is only for the HOSTER !',
+    errtoimg: 'Sorry Currently Not Support Gif Sticker !',
+    wait: '⏳ Being processed',
+	lockCmd: 'Feature Not Enabled By Owner!',
+	example1: 'Selamat Datang @user Di Group @subject Jangan Lupa Baca Rules @desc\n\nNote :\n1. @user (Mention User Join)\n2. @bio (Get Bio User Join)\n3. @tanggal (Date Now)\n4. @desc (Get Description Group)\n5. @subject (group name)'
 }
 
 let file = require.resolve(__filename)
