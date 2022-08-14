@@ -1663,59 +1663,57 @@ exports.rules = (prefix) => {
     return `
 *── 「 RULES AND FAQ 」 ──*
 
-1. Jangan spam bot. 🙅
-2. Jangan telepon bot. ☎️
-3. Jangan membandingkan bot 👍
+1. Don't spam bots. ️
+2. Don't call bots. ️
+3. Don't compare bots 👍
 
-🗯️ Bot tidak atau lambat merespon ?
-➡️ Mungkin dipengaruhi oleh jaringan, signal, banned oleh Whatsapp dan beberapa asalan.
+️ Bot not working or slow to respond ?
+️ May be affected by network, signal, banned by Whatsapp and some random.
 
-🗯️ Dimana saya bisa mendapatkan Script dari bot ini ?
-➡️ Script ini bisa kalian dapatkan di YouTube ZEEONE OFC
+️ Where can I get the script from this bot?
+️ You can get this script on our website https://discord-home.dev/login
 
-🗯️ Boleh saya menambah ke grup?
-➡️ Untuk itu tergantung dari owner bot sendiri
+️ Can I add to the group?
+️ For that it depends on the hoster of the bot number itself
 
-🗯️ Prefixnya apa ya?
-➡️ Bot ini menggunakan multi prefix & bisa kamu gunakan tanpa prefix
+️ What's the prefix?
+️ This bot uses multi prefix & you can use it without prefix
 
-Jika sudah dipahami rules-nya, silakan ketik *${prefix}menu* untuk memulai!
+If you understand the rules, please type *${prefix}menu* to get started!
 
-⚠️ Segala kebijakan dan ketentuan bot dapat berubah kapan saja 
+️ All bot policies and conditions are subject to change at any time - read more on https://discord.home.dev/privacy-policy
 
-Terimakasih! 
+Thank you!
 `
 }
 exports.welcome = () =>{
-	return`𝖩𝖺𝗇𝗀𝖺𝗇 𝗅𝗎𝗉𝖺 𝗂𝗇𝗍𝗋𝗈 𝗄𝖺𝗄 🤗
+	return`Welcome! 🤗
 	
-╭ 𝖭𝖺𝗆𝖺 :
-├ 𝖴𝗆𝗎𝗋 :
+╭ Name :
+├ Age :
 ├ 𝖦𝖾𝗇𝖽𝖾𝗋 :
-├ 𝖠𝗌𝗄𝗈𝗍 :
-╰❒ 𝖯𝖺𝗍𝗎𝗁𝗂 𝗋𝗎𝗅𝖾𝗌 𝗀𝗋𝗎𝗉 𝗒𝖺 𝗄𝖺k ~`
+├ City :
+╰❒ Please follow the group rules`
 }
 exports.leave = () =>{
-	return`Yah kok out 😣 Mental aman kan kak >.<
+	return`Oh no... Why did you leave? >.<
 Goodbye`
 }
 exports.source = () =>{
 return`*------「 SOURCE CODE 」 ------*
 
-Base : https://github.com/DikaArdnt/Hisoka-Morou
-Recode : https://youtube.com/playlist?list=PLFCglBzFPHG7vSQaa9S3P8yfla_d9w-2-
+Based on : https://github.com/DikaArdnt/Hisoka-Morou
+And : https://github.com/SlavyanDesu/BocchiBot
+Recode : https://discord-home.dev/login
 `
 }
 exports.tos = (ownernomer) => {
     return `
 *-------「 DONATE 」 -------*
 
-Hai kak ☺️ 
-Kalian bisa mendukung saya agar bot ini tetap up to date dengan cara donasi
-
-Berapapun donasi kalian akan sangat berarti 👍
-
-Thanks!
+Hi
+You can support me to keep this bot up to date by donating
+Any amount of your donation will mean a lot
 
 Contact person Owner:
 wa.me/${ownernomer}
