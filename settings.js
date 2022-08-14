@@ -13,7 +13,7 @@ global.APIKeys = {
 }
 
 // setting 
-global.autoread = falseuto read message
+global.autoread = false
 global.autobio = true 
 global.userRegister = true 
 
