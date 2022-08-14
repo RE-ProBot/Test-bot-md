@@ -13,7 +13,7 @@ global.APIKeys = {
 }
 
 // setting 
-global.autoread = true // auto read message
+global.autoread = falseuto read message
 global.autobio = true 
 global.userRegister = true 
 
@@ -41,7 +41,7 @@ global.thumbnail = "./image/lol.jpg" // ini lol.jpg adalah nama foto di folder i
 global.donasi = "./image/donasi.jpg" // foto donasi di folder image
 global.background_welcome="https://telegra.ph/file/90a931648de597820bc08.jpg" // maks size 30kb, agar welcome image nya tdk delay
 global.packname = '© Alphabot-Mdོ' //sticker wm ubah
-global.author = 'false' //sticker wm ganti nama kalian
+global.author = false //sticker wm ganti nama kalian
 global.sessionName = 'session'
 global.typemenu = 'document'
 global.multiplier = 69
