@@ -34,20 +34,20 @@ global.email = "emma@skybot.link" //bebas
 global.region = "Zürich (CHF)" //bebas
 global.timezone = 'Asia/Jakarta' //  timezone wib
 global.premium = ['4915905842496'] //premium user
-global.owner = ["4915251332726, 777777777777"] //ganti agar fitur owner bisa di gunakan
+global.owner = ["4915251332726","77777777777"] //ganti agar fitur owner bisa di gunakan
 global.ownernomer = "4915251332726" // nomor wa kalian
-global.ownernomerr = "+4915251332726, +777777777777" //nmr wa kalian
+global.ownernomerr = "+4915251332726" //nmr wa kalian
 global.thumbnail = "./image/lol.jpg" // ini lol.jpg adalah nama foto di folder image. untuk foto bot
 global.donasi = "./image/donasi.jpg" // foto donasi di folder image
 global.background_welcome="https://telegra.ph/file/90a931648de597820bc08.jpg" // maks size 30kb, agar welcome image nya tdk delay
-global.packname = '© Alphabot-Mdོ' //sticker wm ubah
+global.packname = '© skybot.link' //sticker wm ubah
 global.author = `NEO ALPHA` //sticker wm ganti nama kalian
 global.sessionName = 'session'
 global.typemenu = 'document'
 global.multiplier = 69
 global.limitawal = {
     premium: "Infinity",
-    free: 100
+    free: 50
 }
 
 global.adventureRPG = 'https://telegra.ph/file/30bef343159005b622ced.jpg'
@@ -83,7 +83,7 @@ global.mess = {
     errtoimg: 'Sorry Currently Not Support Gif Sticker !',
     wait: '⏳ Being processed',
 	lockCmd: 'Feature Not Enabled By Owner!',
-	example1: 'Selamat Datang @user Di Group @subject Jangan Lupa Baca Rules @desc\n\nNote :\n1. @user (Mention User Join)\n2. @bio (Get Bio User Join)\n3. @tanggal (Date Now)\n4. @desc (Get Description Group)\n5. @subject (group name)'
+	example1: 'Welcome @user to the @subject group. Dont forget to read the rules @desc\n\nNote :\n1. @user (Mention User Join)\n2. @bio (Get Bio User Join)\n3. @date (Date Now)\n4. @desc (Get Description Group)\n5. @subject (group name)'
 }
 
 let file = require.resolve(__filename)
