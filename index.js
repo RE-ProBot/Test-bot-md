@@ -1052,7 +1052,15 @@ if (!m.isGroup) return reply(lang.groupOnly())
             }
             break
             case 'owner': case 'creator': {
-                alpha.sendContact(global.owner)
+				let gam = await getBuffer(picak + 'Owner and Creator')
+				var but = [
+					{
+						"urlButton": {
+							"displayText": "Website",
+							"url": `${myweb}`
+							}
+						}
+					]
             }
             break
             case 'rules':{
@@ -1886,7 +1894,7 @@ break
 ╰❒ Runtime : ${runtime(process.uptime())}
 
 ╭─❒ 「 Date Info 」 
-├ Masehi : ${week}, ${date}
+├ Data : ${week}, ${date}
 ├ Hijriah : ${dateIslamic}
 ╰❒
 
