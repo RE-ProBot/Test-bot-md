@@ -1052,7 +1052,8 @@ if (!m.isGroup) return reply(lang.groupOnly())
             }
             break
             case 'owner': case 'creator': {
-				let gam = await getBuffer(picak + 'Owner and Creator')
+				if (!m.isGroup) return reply(lang.groupOnly())
+				reply('Example 1')
 				var but = [
 					{
 						"urlButton": {
@@ -1061,7 +1062,7 @@ if (!m.isGroup) return reply(lang.groupOnly())
 							}
 						}
 					]
-            }
+			}
             break
             case 'rules':{
             	let gam = await getBuffer(picak + 'Terms and Conditions')
