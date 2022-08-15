@@ -158,16 +158,16 @@ if (!user) continue
 let afkTime = user.afkTime
 if (!afkTime || afkTime < 0) continue
 let reason = user.afkReason || ''
-reply(`Jangan tag dia!
-Dia sedang AFK ${reason ? '\nReason : ' + reason : 'Reason : Nothing'}
+reply(`Don't tag him!
+He's in AFK ${reason ? '\nReason : ' + reason : 'Reason : Nothing'}
 Waktu : ${clockString(new Date - afkTime)}
 `.trim())
 }
 if (db.data.users[m.sender].afkTime > -1) {
 let user = db.data.users[m.sender]
 m.reply(`
-Kamu berhenti AFK${user.afkReason ? ' setelah ' + user.afkReason : ''}
-Selama ${clockString(new Date - user.afkTime)}
+You quit AFK${user.afkReason ? ' after ' + user.afkReason : ''}
+doing  ${clockString(new Date - user.afkTime)}
 `.trim())
 user.afkTime = -1
 user.afkReason = ''
@@ -823,7 +823,7 @@ if (!m.isGroup) return reply(lang.groupOnly())
 				break
 			case 'cekleft': case 'cekgoodbye':{
 				if (!m.isGroup) return reply(lang.groupOnly())
-				defaultwel = `◪ Goodbye @user\n◪ Leave from group: \n@group\n\n└─ ❏ Nomor: @number\nGoodBye~~`
+				defaultwel = `◪ Goodbye @user\n◪ Leave from group: \n@group\n\n└─ ❏ Number: @number\nGoodBye~~`
 				textwel = (db.data.chats[m.chat].setLeave || defaultwel)
 				reply('Text googbye in group ' + groupName + `\n\n` + textwel)
 				}
@@ -921,7 +921,7 @@ if (!m.isGroup) return reply(lang.groupOnly())
 			if(isNaN(umurx)) return reply(lang.UmurReg())
 			if(parseInt(umurx) > 99) return reply(lang.UmurXReg())
 			if(parseInt(umurx) < 3) return reply('Shit')
-			if (!['male', 'female', 'cewe', 'cowo', 'pria', 'wanita'].includes(genderx)) return reply(lang.genderReg(lang.ExReg(prefix)))
+			if (!['male', 'female', 'cewe', 'cowo', 'pria', 'wanita', 'mädchen', 'junge'].includes(genderx)) return reply(lang.genderReg(lang.ExReg(prefix)))
 			const cryptoRandomString = require('crypto-random-string');
 			let user = db.data.users[m.sender]
 			user.registered = true
@@ -1036,7 +1036,7 @@ if (!m.isGroup) return reply(lang.groupOnly())
 				db.data.users[m.sender].limit -= 1
             }
             break
-            case 'ping': case 'tes': case 'runtime':
+            case 'ping': case 'test': case 'runtime': case 'uptime':
             reply(`Runtime : ${runtime(process.uptime())}`)
             break
             case 'public': {
@@ -1069,7 +1069,7 @@ if (!m.isGroup) return reply(lang.groupOnly())
 				}
             break
             case 'pay': case 'bayar':{
-             alpha.sendMessage(m.chat, {image: qris, caption : (db.data.settings[botNumber].captionPay || 'Payment. caption pay bisa ubah dengan command .setcaptionpay ')}, {quoted: m})
+             alpha.sendMessage(m.chat, {image: qris, caption : (db.data.settings[botNumber].captionPay || 'Payments. caption pay can be changed with the command .setcaptionpay')}, {quoted: m})
             	}
            break
 		case 'setcaptionpay':{
@@ -1359,7 +1359,7 @@ break
 					txt += `*🚧 Ext :* ${data.medias[0].extension}\n`
                     txt += `*💾 Size :* ${data.medias[0].formattedSize}\n`
                     txt += `*📚 Url Source :* ${data.url}\n\n`
-                    txt += `*Mohon tunggu sebentar kak, sedang proses pengiriman...*`
+                    txt += `*Please wait a moment sis, in the process of shipping...*`
                     let gam = await getBuffer(data.thumbnail)
                     var but = [
 				{
@@ -1406,7 +1406,7 @@ break
                     let unread = i.receiptTimestamp
                     let waktu = read ? read : unread
                     teks += `⭔ @${i.userJid.split('@')[0]}\n`
-                    teks += ` ┗━⭔ *Waktu :* ${moment(waktu * 1000).format('DD/MM/YY HH:mm:ss')} ⭔ *Status :* ${read ? 'Dibaca' : 'Terkirim'}\n\n`
+                    teks += ` ┗━⭔ *Example :* ${moment(waktu * 1000).format('DD/MM/YY HH:mm:ss')} ⭔ *Status :* ${read ? 'Dibaca' : 'Terkirim'}\n\n`
                 }
                 alpha.sendTextWithMentions(m.chat, teks, m)
             }
@@ -1424,7 +1424,7 @@ break
                  let teks = `⬣ *LIST PERSONAL CHAT*\n\nTotal Chat : ${anu.length} Chat\n\n`
                  for (let i of anu) {
                      let nama = store.messages[i].array[0].pushName
-                     teks += `⬡ *Nama :* ${nama}\n⬡ *User :* @${i.split('@')[0]}\n⬡ *Chat :* https://wa.me/${i.split('@')[0]}\n\n────────────────────────\n\n`
+                     teks += `⬡ *Name :* ${nama}\n⬡ *User :* @${i.split('@')[0]}\n⬡ *Chat :* https://wa.me/${i.split('@')[0]}\n\n────────────────────────\n\n`
                  }
                  alpha.sendTextWithMentions(m.chat, teks, m)
              }
@@ -1444,7 +1444,7 @@ let anu = groups.map(v => v.id)
 let teks = `⬣ *LIST GROUP CHAT*\n\nTotal Group : ${anu.length} Group\n\n`
 for (let i of anu) {
 let metadata = await alpha.groupMetadata(i)
-teks += `🐥 *Nama :* ${metadata.subject}\n👤 *Owner :* @${groupMetadata.owner.split('@')[0]}\n♨️ *ID :* ${metadata.id}\n🗓️ *Dibuat :* ${moment(metadata.creation * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss')}\n👥 *Member :* ${metadata.participants.length}\n\n────────────────────────\n\n`
+teks += `🐥 *Name :* ${metadata.subject}\n👤 *Owner :* @${groupMetadata.owner.split('@')[0]}\n♨️ *ID :* ${metadata.id}\n🗓️ *Made :* ${moment(metadata.creation * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss')}\n👥 *Member :* ${metadata.participants.length}\n\n────────────────────────\n\n`
 }
 alpha.sendTextWithMentions(m.chat, teks, m)
 }
@@ -1455,7 +1455,7 @@ break
                  let teks = `⬣ *LIST GROUP CHAT*\n\nTotal Group : ${anu.length} Group\n\n`
                  for (let i of anu) {
                      let metadata = await alpha.groupMetadata(i)
-                     teks += `⬡ *Nama :* ${metadata.subject}\n⬡ *Owner :* ${metadata.owner !== undefined ? '@' + metadata.owner.split`@`[0] : '-'}\n⬡ *ID :* ${metadata.id}\n⬡ *Dibuat :* ${moment(metadata.creation * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss')}\n⬡ *Member :* ${metadata.participants.length}\n\n────────────────────────\n\n`
+                     teks += `⬡ *Name :* ${metadata.subject}\n⬡ *Owner :* ${metadata.owner !== undefined ? '@' + metadata.owner.split`@`[0] : '-'}\n⬡ *ID :* ${metadata.id}\n⬡ *Made :* ${moment(metadata.creation * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss')}\n⬡ *Member :* ${metadata.participants.length}\n\n────────────────────────\n\n`
                  }
                  alpha.sendTextWithMentions(m.chat, teks, m)
             }
