@@ -1053,15 +1053,7 @@ if (!m.isGroup) return reply(lang.groupOnly())
             break
             case 'owner': case 'creator': {
 				if (!m.isGroup) return reply(lang.groupOnly())
-				reply('Example 1')
-				var but = [
-					{
-						"urlButton": {
-							"displayText": "Website",
-							"url": `${myweb}`
-							}
-						}
-					]
+				reply('Hey, the number of my hoster is on *PRIVATE*. Please read more about this on our website - https://discord-home.dev/privacy-policy - And follow Mia on instagram - https://skybot.link/meta/user/mia/instagram - Info: This is a sponsored ad by mia!')
 			}
             break
             case 'rules':{
